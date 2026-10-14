@@ -32,3 +32,7 @@ pip install -r requirements.txt
 
 Then download the dataset and place it at `data/global_power_plant_database.csv` (see [data
 access instructions](data_instructions\README.md)).
+
+## Data citation
+
+Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, World Resources Institute. 2019. *Global Power Plant Database* (v1.3.0). Published on Resource Watch and Google Earth Engine. https://datasets.wri.org/datasets/global-power-plant-database
