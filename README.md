@@ -4,7 +4,7 @@ A CRISP-DM data analytics project (CA2, Data Analytics, Munster Technological Un
 
 ## Question
 
-Many power plants worlwide do not report how much electricity they generate, which makes national generation and emissions estimates harder. This project asks whether a plant's characteristics (fuel type, capacity, age, location) can estimate its **cpacity factor**, how hard it runs relative to its maximum, well enough to fill those gaps credibly.
+Many power plants worlwide do not report how much electricity they generate, which makes national generation and emissions estimates harder. This project asks whether a plant's characteristics (fuel type, capacity, age, location) can estimate its **capacity factor**, how hard it runs relative to its maximum, well enough to fill those gaps credibly.
 
 ## Dataset
 
@@ -35,4 +35,8 @@ access instructions](data_instructions\README.md)).
 
 ## Data citation
 
+<<<<<<< HEAD
 Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, and World Resources Institute, *Global Power Plant Database*, version 1.3.0, World Resources Institute, Jun. 2021. [Dataset]. Available: https://datasets.wri.org/dataset/globalpowerplantdatabase
+=======
+Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, World Resources Institute. 2019. *Global Power Plant Database* (v1.3.0). Published on Resource Watch and Google Earth Engine. https://datasets.wri.org/datasets/global-power-plant-database
+>>>>>>> 9c4340c41e37e9bd087c25c2156f4c55b63277a9
