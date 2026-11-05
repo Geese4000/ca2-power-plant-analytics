@@ -35,8 +35,4 @@ access instructions](data_instructions\README.md)).
 
 ## Data citation
 
-<<<<<<< HEAD
 Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, and World Resources Institute, *Global Power Plant Database*, version 1.3.0, World Resources Institute, Jun. 2021. [Dataset]. Available: https://datasets.wri.org/dataset/globalpowerplantdatabase
-=======
-Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, World Resources Institute. 2019. *Global Power Plant Database* (v1.3.0). Published on Resource Watch and Google Earth Engine. https://datasets.wri.org/datasets/global-power-plant-database
->>>>>>> 9c4340c41e37e9bd087c25c2156f4c55b63277a9
