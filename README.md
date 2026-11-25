@@ -2,9 +2,14 @@
 
 A CRISP-DM data analytics project (CA2, Data Analytics, Munster Technological University).
 
-## Question
+## Questions
 
-Many power plants worlwide do not report how much electricity they generate, which makes national generation and emissions estimates harder. This project asks whether a plant's characteristics (fuel type, capacity, age, location) can estimate its **capacity factor**, how hard it runs relative to its maximum, well enough to fill those gaps credibly.
+Many power plants worldwide do not report how much electricity they generate, which makes national generation and emissions estimates harder. Using each plant's characteristics (fuel type, capacity, age, location), national electricity statistics and, for US plants, equipment records, this project answers two questions for every plant:
+
+1. **How much electricity did it produce in 2017?** (regression on the plant's **capacity factor**, how hard it runs relative to its maximum)
+2. **What role does it play: low use, mid, or high (baseload)?** (classification)
+
+For both, it measures how far the answers can be trusted, including for countries where no plants report.
 
 ## Dataset
 
