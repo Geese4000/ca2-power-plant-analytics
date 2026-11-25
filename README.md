@@ -19,6 +19,14 @@ The data is **not included** in this repository. See [data access instructions](
 
 Two supporting datasets are joined to it: Ember's Yearly Electricity Data (national generation and capacity by fuel, CC BY 4.0) and the US Energy Information Administration's EIA-860 generator data for 2017 (public domain).
 
+## Outputs
+
+Running the notebook saves, in `data/processed/` (not committed):
+- `plant_answers_2017.csv`: one row per plant with 2017 generation, capacity factor, role, source/confidence label, and a flag where the two answers disagree.
+- `prepared_train.csv`, `prepared_test.csv`, `prepared_scenario_B.csv`: the prepared modelling sets.
+
+Figures are saved in `figures/`.
+
 ## Setup
 
 Requires Python 3.10 or later.
