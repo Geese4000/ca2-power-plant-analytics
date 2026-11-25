@@ -40,3 +40,19 @@ The `data/` folder is listed in `.gitignore`, so the file will not be committed.
 Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia, World Resources Institute. 2019. *Global Power Plant Database* (v1.3.0). Published on Resource Watch and Google Earth Engine. https://datasets.wri.org/datasets/global-power-plant-database
 
 Data by World Resources Institute and partners, licensed under CC BY 4.0.
+
+DATA_PATH = "../data/global_power_plant_database.csv"
+EMBER_PATH = "../data/release_generation_yearly_global.csv"
+EIA_PATH = "../data/eia8602017/3_1_Generator_Y2017.xlsx"
+
+raw = pd.read_csv(DATA_PATH, low_memory=False)
+assert raw.shape == (34936, 36), f"Unexpected shape: {raw.shape} - check data_instructions/README.md"
+
+# Supporting datasets (2.1): national electricity statistics and US generator records
+ember_raw = pd.read_csv(EMBER_PATH)
+eia_raw = pd.read_excel(EIA_PATH, sheet_name=["Operable", "Retired and Canceled"], header=1)
+print(f"Ember rows: {len(ember_raw):,} | EIA-860 generators: operable {len(eia_raw['Operable']):,}, "
+      f"retired or canceled {len(eia_raw['Retired and Canceled']):,}")
+
+df = raw.copy() # work on a copy; `raw` is never modified
+df.head()

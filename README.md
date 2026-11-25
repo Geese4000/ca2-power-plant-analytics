@@ -12,6 +12,8 @@ Many power plants worlwide do not report how much electricity they generate, whi
 
 The data is **not included** in this repository. See [data access instructions](data_instructions\README.md).
 
+Two supporting datasets are joined to it: Ember's Yearly Electricity Data (national generation and capacity by fuel, CC BY 4.0) and the US Energy Information Administration's EIA-860 generator data for 2017 (public domain).
+
 ## Setup
 
 Requires Python 3.10 or later.
