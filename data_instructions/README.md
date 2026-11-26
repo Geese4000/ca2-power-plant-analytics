@@ -45,6 +45,7 @@ DATA_PATH = "../data/global_power_plant_database.csv"
 EMBER_PATH = "../data/release_generation_yearly_global.csv"
 EIA_PATH = "../data/eia8602017/3_1_Generator_Y2017.xlsx"
 
+
 raw = pd.read_csv(DATA_PATH, low_memory=False)
 assert raw.shape == (34936, 36), f"Unexpected shape: {raw.shape} - check data_instructions/README.md"
 
@@ -56,3 +57,23 @@ print(f"Ember rows: {len(ember_raw):,} | EIA-860 generators: operable {len(eia_r
 
 df = raw.copy() # work on a copy; `raw` is never modified
 df.head()
+
+### EIA-923: US plant generation, 2020–2025 (for checking only)
+
+| Item | Detail |
+| --- | --- |
+| Name | Form EIA-923 detailed data, 2020–2025 |
+| Publisher | U.S. Energy Information Administration (EIA) |
+| Source | https://www.eia.gov/electricity/data/eia923/ |
+| Licence | US government work, public domain |
+| Files used | `EIA923_Schedules_2_3_4_5_M_12_<year>_Final….xlsx` for 2020 to 2025 |
+| Accessed | 2026-11-25 |
+
+1. Go to https://www.eia.gov/electricity/data/eia923/
+2. Download the zip for each year from 2020 to 2025.
+3. From each zip, copy the `EIA923_Schedules_2_3_4_5_M_12_…` file into `data/eia923/`.
+
+EIA-923 contains each plant's actual generation, so it is **never used as a model input** (that would leak the answer). It is used only in 6.1, to check estimates for later years against what plants really produced.
+
+
+data/eia923/EIA923_Schedules_2_3_4_5_M_12_2020_Final_Revision.xlsx   (one file per year, 2020-2025)
